@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <TextView
+    android:id="@+id/company"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+     
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        android:layout_below="@+id/company"
+        android:layout_centerHorizontal="true" />
+
+        <TextView
+    android:id="@+id/number"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Number"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_above="@+id/specialty"
+    android:layout_toRightOf="@+id/no"
+    android:layout_toEndOf="@+id/no" />
+     
+        <TextView
+    android:id="@+id/sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Specialty:"
+    android:layout_below="@+id/no"
+    android:layout_alignLeft="@+id/no"
+    android:layout_alignStart="@+id/no"
+    />
+     
+        <TextView
+    android:id="@+id/specialty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:layout_below="@+id/no"
+    android:layout_alignLeft="@+id/number"
+    android:layout_alignStart="@+id/number" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_account_circle_black_48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/specialty"
+        android:layout_alignParentTop="true" />
+     
+    </RelativeLayout>
